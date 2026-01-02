@@ -1,3 +1,0 @@
-[submodule "external_plugins/notebooklm-skill/skills/notebooklm-skill"]
-	path = external_plugins/notebooklm-skill/skills/notebooklm-skill
-	url = git@github.com:PleasePrompto/notebooklm-skill.git
