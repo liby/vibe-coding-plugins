@@ -1,0 +1,32 @@
+{
+  "name": "vibe-coding-plugins",
+  "description": "A curated collection of high-quality MCP servers and skills",
+  "owner": {
+    "name": "Liby",
+    "email": "38807139+liby@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents. Control and inspect a live Chrome browser with full DevTools power for reliable automation, debugging, and performance analysis.",
+      "category": "development",
+      "source": "./external_plugins/chrome-devtools-mcp",
+      "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "name": "grep-by-vercel",
+      "description": "Search over a million public GitHub repositories using grep.app's official MCP server. Find real-world code examples, implementation patterns, and learn from open-source projects.",
+      "category": "development",
+      "source": "./external_plugins/grep-by-vercel",
+      "homepage": "https://grep.app"
+    },
+    {
+      "name": "notebooklm-skill",
+      "description": "Query Google NotebookLM notebooks for source-grounded, citation-backed answers from Gemini. Communicate directly with your uploaded documents.",
+      "category": "productivity",
+      "source": "./external_plugins/notebooklm-skill",
+      "homepage": "https://github.com/PleasePrompto/notebooklm-skill",
+      "strict": false
+    }
+  ]
+}

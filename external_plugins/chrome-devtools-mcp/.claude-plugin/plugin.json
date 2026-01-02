@@ -1,0 +1,10 @@
+{
+  "name": "chrome-devtools-mcp",
+  "description": "Chrome DevTools for coding agents. Control and inspect a live Chrome browser with full DevTools power for reliable automation, debugging, and performance analysis.",
+  "author": {
+    "name": "ChromeDevTools",
+    "url": "https://github.com/ChromeDevTools"
+  },
+  "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "keywords": ["chrome", "devtools", "browser", "debugging", "puppeteer", "automation", "performance"]
+}
