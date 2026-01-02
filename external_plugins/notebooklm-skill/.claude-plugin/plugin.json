@@ -1,0 +1,9 @@
+{
+  "name": "notebooklm-skill",
+  "description": "Query Google NotebookLM notebooks for source-grounded, citation-backed answers from Gemini. Communicate directly with your uploaded documents.",
+  "author": {
+    "name": "PleasePrompto",
+    "url": "https://github.com/PleasePrompto/notebooklm-skill"
+  },
+  "homepage": "https://github.com/PleasePrompto/notebooklm-skill"
+}

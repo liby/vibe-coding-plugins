@@ -25,8 +25,7 @@
       "description": "Query Google NotebookLM notebooks for source-grounded, citation-backed answers from Gemini. Communicate directly with your uploaded documents.",
       "category": "productivity",
       "source": "./external_plugins/notebooklm-skill",
-      "homepage": "https://github.com/PleasePrompto/notebooklm-skill",
-      "strict": false
+      "homepage": "https://github.com/PleasePrompto/notebooklm-skill"
     }
   ]
 }
