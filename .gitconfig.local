@@ -1,0 +1,10 @@
+# Local git aliases for this repository
+#
+# To enable, run once after cloning:
+#   git config --local include.path ../.gitconfig.local
+#
+# Then you can use:
+#   git pull-notebooklm   - Update notebooklm-skill from upstream
+
+[alias]
+    pull-notebooklm = subtree pull --prefix=external_plugins/notebooklm-skill/skills/notebooklm-skill git@github.com:PleasePrompto/notebooklm-skill.git master --squash
