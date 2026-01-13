@@ -24,6 +24,7 @@ Or browse available plugins in `/plugin > Discover`.
 
 | Plugin | Category | Description |
 |--------|----------|-------------|
+| [agent-browser](https://github.com/vercel-labs/agent-browser) | development | Browser automation for web testing, form filling, screenshots, and data extraction. |
 | [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | development | Chrome DevTools for coding agents. Control and inspect a live Chrome browser. |
 | [grep-by-vercel](https://grep.app) | development | Search over a million public GitHub repositories using grep.app's MCP server. |
 | [notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | productivity | Query Google NotebookLM notebooks for source-grounded answers from Gemini. |
