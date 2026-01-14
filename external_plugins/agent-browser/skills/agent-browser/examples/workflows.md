@@ -115,31 +115,6 @@ agent-browser --cdp 9222 click @e1
 agent-browser --cdp 9222 screenshot debug.png
 ```
 
-## Browser Extension
-
-Load a Chrome extension for testing or automation.
-
-```bash
-# Load extension and navigate
-agent-browser --extension ./my-extension open https://example.com
-agent-browser snapshot -i
-
-# Extension is active for the session
-agent-browser click @e1
-```
-
-## Serverless Deployment
-
-Use a custom Chromium binary for Lambda, Vercel, or other serverless platforms.
-
-```bash
-# Use lightweight Chromium build
-agent-browser --executable-path /opt/chromium open https://example.com
-agent-browser snapshot -i
-agent-browser screenshot result.png
-agent-browser close
-```
-
 ## Custom Headers
 
 Inject authentication tokens or custom headers for API testing.

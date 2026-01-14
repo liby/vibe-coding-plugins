@@ -30,8 +30,7 @@ agent-browser screenshot        # Capture page
 agent-browser close             # Close browser
 
 # Global options (combine with any command)
-agent-browser --cdp 9222 snapshot                # Connect to existing browser
-agent-browser --extension ./ext open <url>       # Load browser extension
+agent-browser --cdp 9222 snapshot                      # Connect to existing browser
 agent-browser --headers '{"Auth":"token"}' open <url>  # Custom headers
 ```
 
