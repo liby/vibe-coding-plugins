@@ -28,6 +28,11 @@ agent-browser click @e1         # Click element by ref
 agent-browser fill @e2 "text"   # Fill input by ref
 agent-browser screenshot        # Capture page
 agent-browser close             # Close browser
+
+# Global options (combine with any command)
+agent-browser --cdp 9222 snapshot                # Connect to existing browser
+agent-browser --extension ./ext open <url>       # Load browser extension
+agent-browser --headers '{"Auth":"token"}' open <url>  # Custom headers
 ```
 
 ## Core Workflow
@@ -53,6 +58,7 @@ agent-browser errors                     # View page errors
 |---------|----------|
 | Element not found | Re-run `snapshot -i` after page changes |
 | Click not working | Try `scrollintoview @e1` first, then click |
+| Element blocked by overlay | Dismiss modal/cookie banner first, then retry |
 | Timeout errors | Add `wait --load networkidle` after navigation |
 | Auth expired | Re-run login flow and save new state |
 

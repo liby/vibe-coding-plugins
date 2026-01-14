@@ -10,10 +10,10 @@
     {
       "name": "agent-browser",
       "description": "Browser automation for web testing, form filling, screenshots, and data extraction. Headless browser control via CLI.",
-      "version": "0.4.4",
+      "version": "0.5.0",
       "category": "development",
       "source": "./external_plugins/agent-browser",
-      "homepage": "https://github.com/vercel-labs/agent-browser"
+      "homepage": "https://agent-browser.dev"
     },
     {
       "name": "chrome-devtools-mcp",

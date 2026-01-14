@@ -1,5 +1,22 @@
 # Command Reference
 
+## Global Options
+
+Options that can be combined with any command.
+
+```bash
+agent-browser --cdp <port> <command>              # Connect via CDP to existing browser
+agent-browser --extension <path> <command>        # Load browser extension (Chromium only)
+agent-browser --executable-path <path> <command>  # Custom browser binary (serverless)
+agent-browser --headers '<json>' <command>        # Inject custom HTTP headers
+agent-browser --stream <port> <command>           # WebSocket viewport streaming
+agent-browser --session <name> <command>          # Isolate browser instance
+```
+
+**Constraints**:
+- `--cdp` and `--extension` are mutually exclusive
+- `--extension` only works with Chromium
+
 ## Navigation
 
 ```bash
@@ -73,6 +90,15 @@ Save and restore browser state (cookies, localStorage).
 agent-browser state save auth.json    # Save current state
 agent-browser state load auth.json    # Restore saved state
 agent-browser state clear             # Clear all state
+```
+
+## Environment Variables
+
+```bash
+AGENT_BROWSER_SESSION=myagent               # Default session name
+AGENT_BROWSER_EXECUTABLE_PATH=/opt/chromium # Custom browser path
+AGENT_BROWSER_EXTENSIONS=/path/ext1,/path/ext2  # Extensions to load
+AGENT_BROWSER_STREAM_PORT=9223              # WebSocket stream port
 ```
 
 ## Help
