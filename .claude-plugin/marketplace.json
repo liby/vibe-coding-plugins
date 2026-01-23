@@ -8,14 +8,6 @@
   },
   "plugins": [
     {
-      "name": "agent-browser",
-      "description": "Browser automation for web testing, form filling, screenshots, and data extraction. Headless browser control via CLI.",
-      "version": "0.5.0",
-      "category": "development",
-      "source": "./external_plugins/agent-browser",
-      "homepage": "https://agent-browser.dev"
-    },
-    {
       "name": "chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents. Control and inspect a live Chrome browser with full DevTools power for reliable automation, debugging, and performance analysis.",
       "version": "latest",
