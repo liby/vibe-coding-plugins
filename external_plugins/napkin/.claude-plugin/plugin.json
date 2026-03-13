@@ -1,0 +1,9 @@
+{
+  "name": "napkin",
+  "description": "Persistent mistake memory for Claude Code. Logs corrections and patterns to a per-repo scratchpad so your agent stops repeating mistakes.",
+  "author": {
+    "name": "blader",
+    "url": "https://github.com/blader/napkin"
+  },
+  "homepage": "https://github.com/blader/napkin"
+}

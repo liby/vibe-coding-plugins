@@ -1,0 +1,9 @@
+{
+  "name": "rust-skills",
+  "description": "A collection of 179 rules that AI coding agents can use when writing Rust. Covers ownership, error handling, memory, API design, testing, performance, and more.",
+  "author": {
+    "name": "leonardomso",
+    "url": "https://github.com/leonardomso/rust-skills"
+  },
+  "homepage": "https://github.com/leonardomso/rust-skills"
+}

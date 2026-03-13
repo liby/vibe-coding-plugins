@@ -1,0 +1,9 @@
+{
+  "name": "claudeception",
+  "description": "Autonomous skill extraction and continuous learning. Claude extracts and preserves learned knowledge into reusable skills.",
+  "author": {
+    "name": "blader",
+    "url": "https://github.com/blader/Claudeception"
+  },
+  "homepage": "https://github.com/blader/Claudeception"
+}

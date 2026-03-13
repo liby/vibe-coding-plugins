@@ -1,0 +1,36 @@
+name: Sync External Plugins
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-external-plugins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Sync external plugins
+        run: bun scripts/sync-plugins.ts
+
+      - name: Commit and push
+        run: |
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync external plugins from upstream"
+            git push
+          else
+            echo "No changes to push"
+          fi

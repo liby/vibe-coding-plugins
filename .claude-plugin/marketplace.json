@@ -1,4 +1,5 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "vibe-coding-plugins",
   "description": "A curated collection of high-quality MCP servers and skills",
   "owner": {
@@ -6,13 +7,6 @@
     "email": "38807139+liby@users.noreply.github.com"
   },
   "plugins": [
-    {
-      "name": "chrome-devtools-mcp",
-      "description": "Chrome DevTools for coding agents. Control and inspect a live Chrome browser with full DevTools power for reliable automation, debugging, and performance analysis.",
-      "category": "development",
-      "source": "./external_plugins/chrome-devtools-mcp",
-      "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
-    },
     {
       "name": "grep-by-vercel",
       "description": "Search over a million public GitHub repositories using grep.app's official MCP server. Find real-world code examples, implementation patterns, and learn from open-source projects.",
@@ -23,9 +17,31 @@
     {
       "name": "notebooklm-skill",
       "description": "Query Google NotebookLM notebooks for source-grounded, citation-backed answers from Gemini. Communicate directly with your uploaded documents.",
+      "version": "1.3.0",
       "category": "productivity",
       "source": "./external_plugins/notebooklm-skill",
       "homepage": "https://github.com/PleasePrompto/notebooklm-skill"
+    },
+    {
+      "name": "napkin",
+      "description": "Persistent mistake memory for Claude Code. Logs corrections and patterns to a per-repo scratchpad so your agent stops repeating mistakes.",
+      "category": "productivity",
+      "source": "./external_plugins/napkin",
+      "homepage": "https://github.com/blader/napkin"
+    },
+    {
+      "name": "claudeception",
+      "description": "Autonomous skill extraction and continuous learning. Claude extracts and preserves learned knowledge into reusable skills.",
+      "category": "productivity",
+      "source": "./external_plugins/claudeception",
+      "homepage": "https://github.com/blader/Claudeception"
+    },
+    {
+      "name": "rust-skills",
+      "description": "A collection of 179 rules that AI coding agents can use when writing Rust. Covers ownership, error handling, memory, API design, testing, performance, and more.",
+      "category": "development",
+      "source": "./external_plugins/rust-skills",
+      "homepage": "https://github.com/leonardomso/rust-skills"
     }
   ]
 }
